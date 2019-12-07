@@ -1,0 +1,11 @@
+#####################################
+# Site / Theme Configuration
+#####################################
+
+#####################
+# HTML Page Metadata
+#####################
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+favicon:
+google_site_verification:
