@@ -1,11 +1,35 @@
 #####################################
 # Site / Theme Configuration
 #####################################
+# Menu
+menu:
+  Home: /
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  Portfolio: portfolio
+  CV: cv
+  Ethos: ethos
+  About: about
+rss: /atom.xml
 
-#####################
+# Sidebar
+sidebar: right
+widgets:
+- search
+- social
+- recent_posts
+- category
+- tag
+- tagcloud
+- archive
+
+# Profile
+profile: profile.jpg
+
 # HTML Page Metadata
-#####################
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-favicon:
+favicon: css/images/favicon.ico
 google_site_verification:
+

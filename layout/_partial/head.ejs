@@ -3,54 +3,57 @@
   <!-- STATIC -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
 
   <!-- VARIABLE -->
   <!-- TITLE -->
   <% if (page.title){ %>
-    <title><%- page.title %></title>
+  <title><%- page.title %></title>
   <% } else if (config.title) { %>
-    <title><%- config.title %></title>
+  <title><%- config.title %></title>
   <% } %>
 
   <!-- AUTHOR -->
   <% if (config.author) { %>
-    <meta name="author" content="<%- config.author %>" />
+  <meta name="author" content="<%- config.author %>" />
   <% }%>
 
   <!-- DESCRIPTION -->
   <% if (page.description){ %>
-    <meta name="description" content="<%- page.description %>" />
+  <meta name="description" content="<%- page.description %>" />
   <% } else if (config.description) { %>
-    <meta name="description" content="<%- config.description %>" />
+  <meta name="description" content="<%- config.description %>" />
   <% }%>
 
   <!-- KEYWORDS -->
   <% if (page.keywords){ %>
-    <meta name="keywords" content="<%- page.keywords %>" />
+  <meta name="keywords" content="<%- page.keywords %>" />
   <% } else if (page.tags && page.tags.length){ %>
-    <meta name="keywords" content="<% page.tags.forEach(function(tag, i){ %><%- tag.name %><% }) %>" />
+  <meta name="keywords" content="<% page.tags.forEach(function(tag, i){ %><%- tag.name %><% }) %>" />
   <% } else if (config.keywords){ %>
-    <meta name="keywords" content="<%- config.keywords %>" />
+  <meta name="keywords" content="<%- config.keywords %>" />
   <% }%>
 
   <!-- GOOGLE SITE VERIFICATION -->
   <% if (theme.google_site_verification){ %>
-    <meta name="google-site-verification" content="<%- theme.google_site_verification %>" />
+  <meta name="google-site-verification" content="<%- theme.google_site_verification %>" />
   <% } %>
 
   <!-- FAVICON -->
   <link rel="icon" href="<%= config.root %><% if (theme.favicon){ %><%- theme.favicon %><% } else {%>css/images/favicon.ico<% } %>">
 
-  <%- css('bootstrap/css/bootstrap.min.css') %>
- 
+  <!-- CSS AND SCRIPTS -->
+  <!-- Bulma -->
+  <%- css('css/bulma.min.css') %>
+  <!-- Custom Site CSS -->
+  <%- css('css/main.css') %>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <%- css('css/ie10-viewport-bug-workaround.css') %>
-  <!-- Custom styles for this template -->
-  <%- css('css/blog.css') %>
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- FontAwesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
