@@ -1,0 +1,101 @@
+#app {
+  font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+#wrapper {
+  flex: 1;
+}
+#main-navigation {
+  border: solid #333;
+  border-width: 1px 0 3px;
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 3px;
+  border-left-width: 0px;
+  margin-bottom: 1.5rem;
+}
+.offwhite-bg {
+  background-color: #fcfcfc;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+.custom-footer {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: bottom;
+  align-self: flex-end;
+}
+.menu-icons {
+  padding-right: 15px;
+}
+.public-key {
+  padding-top: 15px;
+}
+.social-icons {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: #64171a;
+}
+.is-horizontal-center {
+  justify-content: center;
+}
+.card {
+  border-radius: 10px;
+}
+.panel {
+  border-radius: 10px;
+}
+.page-enter-active, .page-leave-active {
+  transition: all 0.25s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
+
+.job-date {
+  font-style: italic;
+  font-size: 0.90rem;
+}
+.job-skills {
+  font-style: italic;
+  font-size: 0.90rem;
+}
+.list-item {
+  height: 20px;
+}
+.menu {
+  padding-top: 15px;
+}
+
+#profile {
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+}
+
+#hero-override {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}

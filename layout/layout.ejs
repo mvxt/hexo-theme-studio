@@ -1,4 +1,31 @@
+<!DOCTYPE html>
 <html>
   <!-- Head tag -->
   <%- partial('_partial/head') %>
+
+  <body>
+    <div id="app" class="offwhite-bg columns">
+      <div class="column is-8 is-offset-2">
+        <!-- Hero -->
+        <%- partial('_partial/hero') %>
+        <!-- Menu -->
+        <%- partial('_partial/nav_menu.ejs') %>
+        <div id="wrapper" class="container">
+          <div class="columns">
+            <!-- Sidebar -->
+            <div class="column is-one-third is-hidden-touch">
+              <%- partial('_partial/profile.ejs') %>
+            </div>
+            <!-- Main Body -->
+            <div class="column auto">
+              <%- body %>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <%- partial('_partial/footer') %>
+        <%- partial('_partial/scripts') %>
+      </div>
+    </div>
+  </body>
 </html>

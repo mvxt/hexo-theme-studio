@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<section class="hero">
+  <div id="hero-override" class="hero-body">
+    <div class="container">
+      <h1 class="title">
+      <% if (theme.title){ %>
+      <%- theme.title %>
+      <% } else { %>
+      <%- config.title %>
+      <% } %>
+      </h1>
+      <h2 class="subtitle">
+      <% if (theme.subtitle){ %>
+      <%- theme.subtitle %>
+      <% } else { %>
+      <%- config.subtitle %>
+      <% } %>
+      </h2>
+    </div>
+  </div>
+</section>
