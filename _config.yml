@@ -13,13 +13,14 @@ rss: /atom.xml
 # Sidebar
 sidebar: right
 widgets:
-- search
+  #- search
+- profile
 - social
 - recent_posts
-- category
-- tag
-- tagcloud
-- archive
+  #- category
+  #- tag
+  #- tagcloud
+  #- archive
 
 # Profile Picture
 profile: profile.jpg
@@ -35,6 +36,6 @@ social:
 # HTML Page Metadata
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-favicon: css/images/favicon.ico
+favicon: favicon.ico
 google_site_verification:
 
