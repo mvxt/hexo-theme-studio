@@ -41,15 +41,13 @@
   <% } %>
 
   <!-- FAVICON -->
-  <link rel="icon" href="<%= config.root %><% if (theme.favicon){ %><%- theme.favicon %><% } else {%>css/images/favicon.ico<% } %>">
+  <link rel="icon" href="<%= config.root %><% if (theme.favicon){ %><%- theme.favicon %><% } else {%>favicon.ico<% } %>">
 
   <!-- CSS AND SCRIPTS -->
   <!-- Bulma -->
   <%- css('css/bulma.min.css') %>
   <!-- Custom Site CSS -->
   <%- css('css/main.css') %>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <%- css('css/ie10-viewport-bug-workaround.css') %>
   <!-- FontAwesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <!--[if lt IE 9]>
