@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <% if (site.posts.length){ %>
-<div>
+<div class="widget">
   <div class="tab">Recent Posts</div>
   <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
   <a href="<%- url_for(post.path) %>" title="<% post.title %>">
