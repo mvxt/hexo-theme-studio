@@ -13,14 +13,12 @@ rss: /atom.xml
 # Sidebar
 sidebar: right
 widgets:
-  #- search
 - profile
 - social
 - recent_posts
 - category
-  #- tag
-  #- tagcloud
-  #- archive
+- tagcloud
+- archive
 
 # Widget Options
 archive_type: 'monthly'
@@ -36,6 +34,10 @@ social:
   Github: https://github.com/mvxt
   Youtube: https://www.youtube.com/channel/UCD9Vpco6dO5GfYOSmipwlvg
   Medium: https://medium.com/@michael.thanh
+
+# Search
+search:
+  insight: true # Install `hexo-generator-json-content` before using Insight Search
 
 # HTML Page Metadata
 # Google Webmaster tools verification setting
