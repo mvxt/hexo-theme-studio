@@ -20,6 +20,15 @@
   margin-bottom: 1.5rem;
   background-color: rgba(255, 255, 255, 0);
 }
+ul.category-list {
+  padding-top: 0.5rem;
+}
+span.category-list-count::before {
+  content: " (";
+}
+span.category-list-count::after {
+  content: ")";
+}
 .tab {
   background-color: inherit;
   border: solid #333;
