@@ -17,10 +17,14 @@ widgets:
 - profile
 - social
 - recent_posts
-  #- category
+- category
   #- tag
   #- tagcloud
   #- archive
+
+# Widget Options
+archive_type: 'monthly'
+show_count: true
 
 # Profile Picture
 profile: profile.jpg
