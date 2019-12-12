@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<% if (site.categories.length){ %>
+<div class="widget">
+  <div class="tab"><%= __('Tag Cloud') %></div>
+  <div class="is-size-7 tagcloud">
+    <%- tagcloud({max_font: 15}) %>
+  </div>
+</div>
+<% } %>

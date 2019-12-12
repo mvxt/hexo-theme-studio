@@ -4,11 +4,8 @@
 # Menu
 menu:
   Home: /
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  Portfolio: portfolio
   CV: cv
+  Portfolio: portfolio
   Ethos: ethos
   About: about
 rss: /atom.xml
@@ -16,20 +13,35 @@ rss: /atom.xml
 # Sidebar
 sidebar: right
 widgets:
-- search
+- profile
 - social
 - recent_posts
 - category
-- tag
 - tagcloud
 - archive
 
-# Profile
+# Widget Options
+archive_type: 'monthly'
+show_count: true
+
+# Profile Picture
 profile: profile.jpg
+
+# Social Links
+# Key is Font Awesome icon name, value is target link
+social:
+  LinkedIn: https://www.linkedin.com/in/michaelthanh/
+  Github: https://github.com/mvxt
+  Youtube: https://www.youtube.com/channel/UCD9Vpco6dO5GfYOSmipwlvg
+  Medium: https://medium.com/@michael.thanh
+
+# Search
+search:
+  insight: true # Install `hexo-generator-json-content` before using Insight Search
 
 # HTML Page Metadata
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-favicon: css/images/favicon.ico
+favicon: favicon.ico
 google_site_verification:
 
