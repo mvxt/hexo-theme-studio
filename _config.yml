@@ -29,11 +29,13 @@ profile: profile.jpg
 
 # Social Links
 # Key is Font Awesome icon name, value is target link
+# See Font Awesome icons at: https://fontawesome.com/icons?d=gallery
 social:
-  LinkedIn: https://www.linkedin.com/in/michaelthanh/
+  LinkedIn-In: https://www.linkedin.com/in/michaelthanh/
   Github: https://github.com/mvxt
+  Medium-M: https://medium.com/@michael.thanh
   Youtube: https://www.youtube.com/channel/UCD9Vpco6dO5GfYOSmipwlvg
-  Medium: https://medium.com/@michael.thanh
+  Twitter: https://twitter.com/mikeyvxt
 
 # Search
 search:
