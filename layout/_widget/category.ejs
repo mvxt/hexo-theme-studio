@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <% if (site.categories.length){ %>
 <div class="widget">
-  <div class="tab"><%= __('Categories') %></div>
-  <div class="is-size-6">
+  <div class="tab">
+    <a href="/categories"><%= __('Categories') %></a>
+  </div>
+  <div class="is-size-6-7">
     <%- list_categories({show_count: theme.show_count}) %>
   </div>
 </div>

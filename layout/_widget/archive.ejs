@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <% if (site.posts.length){ %>
 <div class="widget">
-  <div class="tab"><%= __('Archive') %></div>
-  <div class="is-size-6">
+  <div class="tab">
+    <a href="/archives"><%= __('Archives') %></a>
+  </div>
+  <div class="is-size-6-7">
     <%- list_archives({show_count: theme.show_count, type: theme.archive_type}) %>
   </div>
 </div>

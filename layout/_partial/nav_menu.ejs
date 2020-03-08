@@ -16,15 +16,18 @@
       <% } %>
     </div>
 
+    <% if (theme.search.insight) { %>
     <div class="navbar-end">
-      <div class="navbar-item field">
-        <p class="control has-icons-left">
-          <input class="input is-rounded" type="text" placeholder="Search website...">
+      <div id="search-form-wrap" class="navbar-item field">
+        <form class="control has-icons-left search-form">
+          <input class="input is-rounded search-field" type="search" placeholder=" <%= __('Search website') %>..." title="Search">
           <span class="icon is-small is-left">
-            <i class="fas fa-search"></i>
+          <i class="fas fa-search"></i>
           </span>
-        </p>
+        </form>
       </div>
     </div>
+    <%- partial('_partial/search') %>
+    <% } %>
   </div>
 </nav>

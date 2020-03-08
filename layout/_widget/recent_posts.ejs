@@ -6,8 +6,8 @@
   <a href="<%- url_for(post.path) %>" title="<% post.title %>">
     <div class="level">
       <div class="level-item article">
-        <figure class="media-left">
-          <p class="image is-64x64">
+        <figure class="media-left media-left-override">
+          <p class="image is-48x48">
             <% if (post.photos != ""){ %>
             <img src="<%= post.photos[0] %>">
             <% } else { %>
@@ -16,7 +16,7 @@
           </p>
         </figure>
         <div class="media-content">
-          <p class="has-text-weight-bold article-title is-size-6 overflow"><%= post.title || '(no title)' %></p>
+          <p class="has-text-weight-bold article-title overflow"><%= post.title || '(no title)' %></p>
           <footer class="is-size-7"><%= date(post.date, 'MMMM D, YYYY') %></footer>
         </div>
       </div>
