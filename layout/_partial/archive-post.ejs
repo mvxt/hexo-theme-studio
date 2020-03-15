@@ -1,9 +1,11 @@
-<article class="archive-article archive-type-<%= post.layout %>">
-  <div class="level">
-    <a href="<%- url_for(post.path) %>" class="archive-article-date">
-    <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, 'MMM DD, YYYY') %></time>
-  </a>
-    <%- partial('post/title', {class_name: 'archive-article-title'}) %>
-  </header>
-</article>
-
+<a href="<%- url_for(post.path) %>" title="<% post.title %>">
+  <article class="archive-article-entry columns is-mobile">
+    <div class="column is-1 is-hidden-mobile"></div>
+    <div class="column is-3 archive-article-date archive-article-separator has-text-weight-bold">
+      <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, 'MMM DD, YYYY') %></time>
+    </div>
+    <div class="column auto archive-article-title">
+      <p><%= post.title %></p>
+    </div>
+  </article>
+</a>
