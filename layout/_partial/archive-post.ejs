@@ -1,0 +1,9 @@
+<article class="archive-article archive-type-<%= post.layout %>">
+  <div class="level">
+    <a href="<%- url_for(post.path) %>" class="archive-article-date">
+    <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, 'MMM DD, YYYY') %></time>
+  </a>
+    <%- partial('post/title', {class_name: 'archive-article-title'}) %>
+  </header>
+</article>
+

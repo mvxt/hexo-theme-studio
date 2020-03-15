@@ -4,9 +4,9 @@
 # Menu
 menu:
   Home: /
-  CV: cv
-  Portfolio: portfolio
-  Ethos: ethos
+  Archives: archives
+  Categories: categories
+  Tags: tags
   About: about
 rss: /atom.xml
 
@@ -24,8 +24,8 @@ widgets:
 archive_type: 'monthly'
 show_count: true
 
-# Profile Picture
-profile: profile.jpg
+# Profile Picture - place inside /source/img
+profile: /img/profile.jpg
 
 # Social Links
 # Key is Font Awesome icon name, value is target link

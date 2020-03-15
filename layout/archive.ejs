@@ -1,0 +1,45 @@
+<% if (is_archive()){ %>
+<div class="archives-container">
+  <h3 class="is-size-6 has-text-centered has-text-weight-bold has-text-grey">
+    <% if (site.posts.length == 1){ %>
+      <%= __('post_total_count_one', site.posts.length) %>
+    <% } else { %>
+      <%= __('post_total_count', site.posts.length) %>
+    <% } %>
+  </h3>
+  <% if (is_current("archives/", true)) { %>
+    <% var last; %>
+    <% site.posts.sort('-date').map(function(post, i){ %>
+      <% var year = post.date.year(); %>
+      <% if (last != year){ %>
+        <% if (last != null){ %>
+          </div></section>
+        <% } %>
+        <% last = year; %>
+        <section class="section">
+          <div class="container">
+            <h1 class="archive-article-header">
+              <a href="<%- url_for(config.archive_dir + '/' + year) %>">
+                <span class="icon archive-calendar-icon">
+                  <i class="fa fa-calendar-alt fa-lg"></i>
+                </span>
+                <span class="is-size-3 has-text-weight-bold"><%= year %></span>
+              </a>
+            </h1>
+          </div>
+          <div class="archives">
+      <% } %>
+      <%- partial('_partial/archive-post', {post: post, even: i % 2 == 0, index: true}) %>
+    <% }) %>
+
+    <% if (site.posts.length){ %>
+      </div></section>
+    <% } %>
+
+  <% } else { %>
+
+  <% } %>
+</div>
+<% } %>
+
+
