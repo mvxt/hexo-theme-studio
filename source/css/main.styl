@@ -22,9 +22,20 @@ global-reset()
   margin-bottom 1.5rem
   background-color #ffffff
   background-color rgba(255, 255, 255, 0)
+  a:hover
+    color #64171a
 
 .category-list, .tagcloud, .archive-list
   padding-top 0.5rem
+
+.category-list-item:before
+  content: "> "
+
+.category-list-child
+  margin-left 1rem
+
+.section-container
+  margin-bottom 2rem
 
 span
   &.archive-list-count
@@ -128,3 +139,4 @@ a
 @import "_partial/profile"
 @import "_partial/article"
 @import "_partial/archives"
+@import "_partial/categories"

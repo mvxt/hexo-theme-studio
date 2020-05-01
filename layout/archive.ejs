@@ -7,38 +7,32 @@
       <%= __('post_total_count', site.posts.length) %>
     <% } %>
   </h3>
+  <section class="section">
   <% if (is_current("archives/", true)) { %>
     <% var last; %>
+    <div class="section-container">
     <% site.posts.sort('-date').map(function(post, i){ %>
       <% var year = post.date.year(); %>
       <% if (last != year){ %>
-        <% if (last != null){ %>
-          </div></section>
-        <% } %>
-        <% last = year; %>
-        <section class="section">
-          <div class="container">
-            <h1 class="archive-article-header">
-              <a href="<%- url_for(config.archive_dir + '/' + year) %>">
-                <span class="icon archive-calendar-icon">
-                  <i class="fa fa-calendar-alt fa-lg"></i>
-                </span>
-                <span class="is-size-3 has-text-weight-bold"><%= year %></span>
-              </a>
-            </h1>
+        <% if (last != null) { %>
+            </div>
           </div>
-          <div class="archives">
+          <div class="section-container">
+        <% } %>
+        <h1 class="archive-article-header">
+          <span class="icon archive-calendar-icon">
+            <i class="fa fa-calendar-alt fa-lg"></i>
+          </span>
+          <span class="is-size-3 has-text-weight-bold"><%= year %></span>
+        </h1>
       <% } %>
-      <%- partial('_partial/archive-post', {post: post, even: i % 2 == 0, index: true}) %>
+      <% last = year; %>
+        <div class="archives">
+          <%- partial('_partial/archive-post', {post: post, even: i % 2 == 0, index: true}) %>
     <% }) %>
-
-    <% if (site.posts.length){ %>
-      </div></section>
-    <% } %>
-
-  <% } else { %>
-
+    </div>
   <% } %>
+  </section>
 </div>
 <% } %>
 

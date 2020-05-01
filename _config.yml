@@ -11,14 +11,13 @@ menu:
 rss: /atom.xml
 
 # Sidebar
-sidebar: right
 widgets:
-- profile
-- social
-- recent_posts
-- category
-- tagcloud
-- archive
+  #- profile
+  #- social
+  #- recent_posts
+  #- category
+  #- tagcloud
+  #- archive
 
 # Widget Options
 archive_type: 'monthly'
