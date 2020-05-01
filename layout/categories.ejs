@@ -1,0 +1,26 @@
+<div class="archives-container">
+  <section class="section">
+    <% site.categories.sort('name').map(function(category){  %>
+    <div class="section-container" id="<%= category.name %>">
+      <h1 class="categories-article-header">
+        <span class="icon categories-header-icon">
+          <i class="fas fa-folder-open"></i>
+        </span>
+        <span class="is-size-4 has-text-weight-bold">
+          <%= category.name %>
+        </span>
+      </h1>
+      <div class="archives">
+        <% category.posts.sort('-date').map(function(post, i){  %>
+          <%- partial('_partial/archive-post', {post: post, index: true}) %>
+          <% if (post.subtitle && post.subtitle.length) { %>
+          <h3 class="post-subtitle">
+            <%- post.subtitle %>
+          </h3>
+          <% } %>
+        <% }) %>
+      </div>
+    </div>
+    <% }) %>
+  </section>
+</div>

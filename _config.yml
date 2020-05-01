@@ -5,26 +5,27 @@
 menu:
   Home: /
   Archives: archives
-  Categories: categories
-  Tags: tags
+  Topics: categories
+  CV: cv
+  Portfolio: portfolio
   About: about
 rss: /atom.xml
 
 # Sidebar
-sidebar: right
 widgets:
-- profile
-- social
-- recent_posts
-- category
-- tagcloud
-- archive
+  #- profile
+  #- social
+  #- recent_posts
+  #- category
+  #- tagcloud
+  #- archive
 
 # Widget Options
 archive_type: 'monthly'
 show_count: true
 
 # Profile Picture - place inside /source/img
+# Only shows up if profile enabled in widgets
 profile: /img/profile.jpg
 
 # Social Links
