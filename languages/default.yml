@@ -6,15 +6,13 @@ search: Search
 tags: Tags
 tagcloud: Tag Cloud
 tweets: Tweets
-prev: Prev
+prev: Previous
 next: Next
 comment: Comments
 archive_a: Archives
 archive_b: "Archives: %s"
 page: Page %d
 recent_posts: Recent Posts
-newer: Newer
-older: Older
 share: Share
 theme_by: Modified from theme by
 rss_feed: RSS Feed
@@ -23,10 +21,10 @@ tag: Tag
 connect: 'Connect With Us'
 post_total_count_one: There is %d post.
 post_total_count: There are %d posts.
+categories_total_count_one: There is %d category.
+categories_total_count: There are %d categories.
 read_more: Continue Reading →
 contents: Contents
-rights_reserved: All Rights Reserved
-site_built: Site built with
 none: None
 insight:
     hint: 'Type something...'
