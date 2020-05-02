@@ -1,7 +1,7 @@
 <% if (theme.social) { %>
-<div class="level social-icons">
+<div class="social-icons">
   <% Object.keys(theme.social).forEach(function(key) { %>
-  <a class="level-item" href="<%= theme.social[key] %>">
+  <a href="<%= theme.social[key] %>">
     <span class="icon">
       <i class="fab fa-<%= key.toLowerCase() %> fa-lg"></i>
     </span>

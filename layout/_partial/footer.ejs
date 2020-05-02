@@ -1,4 +1,13 @@
 <!DOCTYPE html>
 <footer class="custom-footer has-text-centered is-size-6">
+  <div class="social-icons">
+    <% Object.keys(theme.social).forEach(function(key) { %>
+    <a class="footer-social" href="<%= theme.social[key] %>">
+      <span class="icon">
+        <i class="fab fa-<%= key.toLowerCase() %> fa-lg"></i>
+      </span>
+    </a>
+    <% }) %>
+  </div>
   Copyright &copy; <%= new Date().getFullYear(); %> Michael Vinh Xuan Thanh. Site built with <a href="https://hexo.io/">Hexo.io</a> and <a href="https://bulma.io/">Bulma</a>.
 </footer>

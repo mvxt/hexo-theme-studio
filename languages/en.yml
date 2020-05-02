@@ -19,10 +19,10 @@ rss_feed: RSS Feed
 category: Category
 tag: Tag
 connect: 'Connect With Us'
-post_total_count_one: There is %d post.
-post_total_count: There are %d posts.
-categories_total_count_one: There is %d category.
-categories_total_count: There are %d categories.
+post_total_count_one: I've written %d post.
+post_total_count: I've written %d posts.
+categories_total_count_one: I've written about %d topics.
+categories_total_count: I've written about %d topics.
 read_more: Continue Reading →
 contents: Contents
 none: None
