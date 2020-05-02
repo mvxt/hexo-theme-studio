@@ -1,17 +1,11 @@
 global-reset()
 
-body
-  display flex
-  min-height 100vh
-  flex-direction column
-
 #app
   font-family 'Exo 2', Helvetica, Arial, sans-serif
   font-size 18px
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   color #2c3e50
-  flex 1
 
 #main-navigation
   border solid #333
@@ -24,6 +18,9 @@ body
   background-color rgba(255, 255, 255, 0)
   a:hover
     color #64171a
+
+#wrapper
+  margin 0 15px
 
 .category-list, .tagcloud, .archive-list
   padding-top 0.5rem
@@ -74,9 +71,11 @@ span
 
 .custom-footer
   width 100%
-  padding-top 10px
+  padding-top 20px
   padding-bottom 10px
   align-self flex-end
+  a
+    text-decoration: underline
 
 .menu-icons
   padding-right 15px

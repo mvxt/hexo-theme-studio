@@ -3,5 +3,11 @@
   <h1 class="is-size-3 has-text-centered">
     <%- post.title %>
   </h1>
+  <% if (is_post() || is_home()){ %>
+  <h2 class="is-size-5 has-text-centered">
+    <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'MMMM D, YYYY') %></time>
+  </h2>
+  <% } %>
   <%- post.content %>
+  <%- partial('post_nav') %>
 </article>
