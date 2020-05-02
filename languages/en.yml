@@ -23,6 +23,8 @@ tag: Tag
 connect: 'Connect With Us'
 post_total_count_one: There is %d post.
 post_total_count: There are %d posts.
+categories_total_count_one: There is %d category.
+categories_total_count: There are %d categories.
 read_more: Continue Reading →
 contents: Contents
 none: None
