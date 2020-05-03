@@ -8,6 +8,8 @@
     <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'MMMM D, YYYY') %></time>
   </h2>
   <% } %>
-  <%- post.content %>
+  <section class="section">
+    <%- post.content %>
+  </section>
   <%- partial('post_nav') %>
 </article>
