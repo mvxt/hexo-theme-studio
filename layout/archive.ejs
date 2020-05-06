@@ -25,10 +25,10 @@
           </span>
           <span class="is-size-4 has-text-weight-bold"><%= year %></span>
         </h1>
+        <div class="archives">
       <% } %>
       <% last = year; %>
-        <div class="archives">
-          <%- partial('_partial/archive-post', {post: post, even: i % 2 == 0, index: true}) %>
+      <%- partial('_partial/archive-post', {post: post, index: true}) %>
     <% }) %>
     </div>
   <% } %>
