@@ -1,4 +1,4 @@
+<% console.log(Object.keys(page.posts.data['0'])) %>
 <% page.posts.each(function(post){ %>
-  <%- partial('_partial/article', {post: post, index: true}) %>
+  <%- partial('_partial/article', {post: post}) %>
 <% }) %>
-
