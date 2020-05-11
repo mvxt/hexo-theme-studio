@@ -7,7 +7,7 @@ menu:
   Archives: archives
   Topics: categories
   CV: cv
-  Portfolio: portfolio
+  Projects: projects 
   Ethos: ethos
   About: about
 rss: /atom.xml
