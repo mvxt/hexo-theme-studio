@@ -13,7 +13,7 @@ $(document).ready(function() {
       m.classList.add('is-active');
       html.classList.add('is-clipped');
 
-      let close = m.querySelectorAll('div.modal-background, button.modal-close');
+      let close = m.querySelectorAll('div.modal-background, button.close');
       close.forEach(c => {
         c.addEventListener('click', event => {
           m.classList.remove('is-active');
