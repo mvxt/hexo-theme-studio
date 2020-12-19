@@ -4,12 +4,8 @@
 # Menu
 menu:
   Home: /
-  Archives: archives
-  Topics: categories
   CV: cv
-  Projects: projects 
   Ethos: ethos
-  About: about
 rss: /atom.xml
 
 # Sidebar
@@ -36,10 +32,11 @@ social:
   Github: https://github.com/mvxt
   Medium-M: https://medium.com/@michael.thanh
   Twitter: https://twitter.com/mikeyvxt
+  Instagram: https://www.instagram.com/vinnythen00b/
 
 # Search
 search:
-  insight: true # Install `hexo-generator-json-content` before using Insight Search
+  insight: false # Install `hexo-generator-json-content` before using Insight Search
 
 # HTML Page Metadata
 # Google Webmaster tools verification setting
