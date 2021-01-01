@@ -28,11 +28,12 @@ profile: /img/profile.jpg
 # Key is Font Awesome icon name, value is target link
 # See Font Awesome icons at: https://fontawesome.com/icons?d=gallery
 social:
-  LinkedIn-In: https://www.linkedin.com/in/michaelthanh/
-  Github: https://github.com/mvxt
+  Twitch: https://www.twitch.tv/vinnythen00b
   Medium-M: https://medium.com/@michael.thanh
-  Twitter: https://twitter.com/mikeyvxt
-  Instagram: https://www.instagram.com/vinnythen00b/
+  Github: https://github.com/mvxt
+  LinkedIn-In: https://www.linkedin.com/in/michaelthanh
+  Twitter: https://twitter.com/vinnythen00b
+  Instagram: https://www.instagram.com/vinnythen00b
 
 # Search
 search:
